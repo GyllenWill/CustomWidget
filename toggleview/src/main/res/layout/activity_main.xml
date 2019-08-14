@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--建立一个命名空间,规则如下-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:任意字符串(ABC)="http://schemas.android.com/apk/包名"-->
+    <!--自定义属性使用如下：-->
+    <!--ABC：属性名=类型-->
+    <com.ricky.md.toggleviewtest.view.ToggleView
+        xmlns:nihao="http://schemas.android.com/apk/com.ricky.md.toggleviewtest.view.ToggleView"
+
+        android:id="@+id/tv_toggleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+
+        nihao:slide_button="@drawable/slide_button"
+        nihao:switch_background="@drawable/switch_background"
+        nihao:switch_state="false"
+
+        />
+
+</RelativeLayout>
